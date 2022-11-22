@@ -1,0 +1,27 @@
+@include b("product") {
+    @include e("title") {
+        margin-top: var(--spacing-00);
+        margin-bottom: var(--spacing-00);
+        color: $primary-ligth;
+        font-size: var(--ht-four);
+
+        @media (min-width: 992px) {
+            font-size: var(--ht-three);
+        }
+    }
+
+    @include e("carousel") {
+        img {
+            height: 300px;
+            width: 100%;
+
+            @media (min-width: 992px) {
+                height: 600px;
+            }
+        }
+
+        .carousel-indicators {
+            bottom: 50px;
+        }
+    }
+}

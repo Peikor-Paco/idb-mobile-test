@@ -1,0 +1,36 @@
+<!-- articles section -->
+<section class="features">
+    <div class="container">
+        <header class="text-center">
+
+            <h1 class="features__title fw-bold">
+                Titulo de cabecera
+            </h1>
+            <h3 class="features__subtitle fw-bold">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus euismod elit egestas tempor. Ut
+                faucibus ex convallis semper tincidunt.
+            </h3>
+            <p class="features__body">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing
+                and
+                typesetting industry. Lorem Ipsum has been. <a hrfe="" class="fw-bold no-deco">Leer más</a>.
+            </p>
+        </header>
+        <div class="row features__list justify-content-center">
+            {{>"molecules/_m-card-articles" 
+                feature-img="articles"
+                feature-title="Titulo card"
+                feature-cat="Categoria"
+                feature-body="Dispones de un panel para administrar todos los textos,  imágenes y vídeos, opciones de menú y submenus, todo ello en un entorno fácil, usable y para los que no saben nada de informática."                feature-btn="saber mas"
+            }}
+            {{>"molecules/_m-card-articles" 
+                feature-img="card"
+                feature-title="Titulo de entrada largo de dos lineas"
+                feature-cat="Categoria"
+                feature-body="Dispones de un panel para administrar todos los textos,  imágenes y vídeos, opciones de menú y submenus, todo ello en un entorno fácil, usable y para los que no saben nada de informática."                feature-btn="saber mas"
+            }}
+        </div>
+        
+    </div>
+</section>

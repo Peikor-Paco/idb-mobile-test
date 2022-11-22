@@ -1,0 +1,24 @@
+h1 {
+    font-size: var(--ht-four);
+    font-weight: 700;
+
+    @media (min-width: 992px) {
+        font-size: var(--ht-three);
+    }
+}
+
+h2 {
+    font-size: var(--ht-five);
+    font-weight: 700;
+    @media (min-width: 992px) {
+        font-size: var(--ht-four);
+    }
+}
+
+h3 {
+    font-size: var(--ht-body-l);
+    font-weight: 700;
+    @media (min-width: 992px) {
+        font-size: var(--ht-five);
+    }
+}

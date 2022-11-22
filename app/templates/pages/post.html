@@ -1,0 +1,157 @@
+{{#extend "layouts/page"}}
+
+{{!-- Set the page title --}}
+{{#content "title"}}Post{{/content}}
+{{#content "css"}}
+
+{{/content}}
+{{!-- Set the page content --}}
+{{#content "content"}}
+<div class="content">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Título del post</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container post">
+        <div class="row">
+            <main class="col-lg-8 pe-lg-5">
+                <h1 class="post__title">Título del post</h1>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus euismod elit egestas tempor. Ut
+                    faucibus ex convallis semper tincidunt.</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+                    Lorem Ipsum.</p>
+                <div class="row mt-3">
+                    <div class="col-3 mb-4"><img src="img/gallery.webp" class="post__img img-fluid" loading="lazy"
+                            width="220" height="220" alt=""></div>
+                    <div class="col-3 mb-4"><img src="img/gallery-2.webp" class="post__img img-fluid" loading="lazy"
+                            width="220" height="220" alt=""></div>
+                    <div class="col-3 mb-4"><img src="img/gallery.webp" class="post__img img-fluid" loading="lazy"
+                            width="220" height="220" alt=""></div>
+                    <div class="col-3 mb-4"><img src="img/gallery-2.webp" class="post__img img-fluid" loading="lazy"
+                            width="220" height="220" alt=""></div>
+                    <div class="col-3 mb-4"><img src="img/gallery.webp" class="post__img img-fluid" loading="lazy"
+                            width="220" height="220" alt=""></div>
+                    <div class="col-3 mb-4"><img src="img/gallery.webp" class="post__img img-fluid" loading="lazy"
+                            width="220" height="220" alt=""></div>
+                    <div class="col-3 mb-4"><img src="img/gallery.webp" class="post__img img-fluid" loading="lazy"
+                            width="220" height="220" alt=""></div>
+                    <div class="col-3 mb-4"><img src="img/gallery.webp" class="post__img img-fluid" loading="lazy"
+                            width="220" height="220" alt=""></div>
+                </div>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+                    Lorem Ipsum.</p>
+            </main>
+            <aside class="col-lg-4">
+                {{>"organisms/_o-services-vertical"}}
+                <div class="mt-5 post-last">
+                    <h3 class="post-last__heading">Ultimos posts</h3>
+    
+                    <div class="post-last__list">
+                        <article class="post-last__item d-flex">
+                            <div class="flex-none me-3">
+                                <img src="img/gallery-2.webp" alt="" class="post-last__img img-fluid" width="135"
+                                    height="135">
+                            </div>
+    
+                            <div>
+                                <h3 class="post-last__title fw-bold">
+                                    Título de la noticia o del post un poco más largo de lo normal
+                                </h3>
+                                <p class="post-last__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus euismod elit
+                                    egestas
+                                    tempor. Ut faucibus ex convallis semper tincidunt.
+                                </p>
+                                <a class="post-last__link fw-bold d-flex text-uppercase align-items-center"
+                                    href="post.html">LEER
+                                    MÁS <i data-eva="arrow-forward" data-eva-height="16" data-eva-width="16"
+                                        class="ms-1"></i></a>
+                            </div>
+    
+                        </article>
+                        <article class="post-last__item d-flex">
+                            <div class="flex-none me-3">
+                                <img src="img/gallery.webp" alt="" class="post-last__img img-fluid" width="135"
+                                    height="135">
+                            </div>
+    
+                            <div>
+                                <h3 class="post-last__title fw-bold">
+                                    Título de la noticia
+                                </h3>
+                                <p class="post-last__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus euismod elit
+                                    egestas
+                                    tempor. Ut faucibus ex convallis semper tincidunt.
+                                </p>
+                                <a class="post-last__link fw-bold d-flex text-uppercase align-items-center"
+                                    href="post.html">LEER
+                                    MÁS <i data-eva="arrow-forward" data-eva-height="16" data-eva-width="16"
+                                        class="ms-1"></i></a>
+                            </div>
+    
+                        </article>
+                        <article class="post-last__item d-flex">
+                            <div class="flex-none me-3">
+                                <img src="img/gallery-2.webp" alt="" class="post-last__img img-fluid" width="135"
+                                    height="135">
+                            </div>
+    
+                            <div>
+                                <h3 class="post-last__title fw-bold">
+                                    Título de la noticia
+                                </h3>
+                                <p class="post-last__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus euismod elit
+                                    egestas
+                                    tempor. Ut faucibus ex convallis semper tincidunt.
+                                </p>
+                                <a class="post-last__link fw-bold d-flex text-uppercase align-items-center"
+                                    href="post.html">LEER
+                                    MÁS <i data-eva="arrow-forward" data-eva-height="16" data-eva-width="16"
+                                        class="ms-1"></i></a>
+                            </div>
+    
+                        </article>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        {{>"organisms/_o-services"}}
+    </div>
+</div>
+{{/content}}
+{{#content "modal"}}
+{{/content}}
+{{#content "script"}}
+
+{{/content}}
+{{/extend}}

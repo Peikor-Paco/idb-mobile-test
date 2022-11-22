@@ -1,0 +1,69 @@
+.values {
+    margin-top: var(--spacing-07);
+    padding-top: var(--spacing-08);
+    padding-bottom: var(--spacing-08);
+    border-radius: $border-radius-sm;
+
+    @include m("light") {
+        background-color: $secondary;
+        margin-left: 13px !important;
+        margin-right: 13px !important;
+
+        .values__content {
+            padding-left: var(--spacing-04);
+            padding-right: var(--spacing-04);
+        }
+    }
+
+    @media (min-width: 992px) {
+        max-width: $max-width;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-top: var(--spacing-09);
+        padding-bottom: var(--spacing-09);
+    }
+
+    &+& {
+        margin-top: var(--spacing-07);
+    }
+
+    @include e("content") {
+        padding-left: var(--spacing-00);
+        padding-right: var(--spacing-00);
+
+        @media (min-width: 992px) {
+            padding-left: var(--spacing-07);
+            padding-right: var(--spacing-07);
+        }
+
+    }
+
+
+    @include e("title") {
+        color: $primary-ligth;
+        font-size: var(--ht-four);
+    }
+
+    @include e("text") {
+        margin-top: var(--spacing-05);
+        margin-bottom: var(--spacing-00);
+        color: $primary;
+        font-size: var(--ht-body);
+
+        @media (min-width: 992px) {
+            margin-top: var(--spacing-04);
+        }
+    }
+
+    @include e("img") {
+        border-radius: $border-radius-sm;
+        @media (min-width: 992px) {
+            border-radius: $border-radius-lg;
+        }
+    }
+
+    
+    @include e("btn") {
+        margin-top: var(--spacing-05);
+    }
+}

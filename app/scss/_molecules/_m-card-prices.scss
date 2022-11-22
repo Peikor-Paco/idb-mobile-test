@@ -1,0 +1,69 @@
+.card-prices {
+
+    background: $primary;
+    color: $white;
+
+    @include m("highlight") {
+        background: $secondary;
+        color: $primary;
+
+        .card-prices__item svg path{
+            fill: $primary;
+        }
+
+        .card-prices__amount {
+            color: $primary-ligth;
+        }
+    }
+
+    & + & {
+        margin-top: var(--spacing-07);
+    }
+
+    @include e("body") {
+        padding: var(--spacing-08) var(--spacing-07);
+    }
+
+    @include e("list") {
+        margin-bottom: var(--spacing-00);
+    }
+
+    @include e("item") {
+        margin-top: var(--spacing-04);
+        font-size: var(--ht-body-s);
+    }
+
+    @include e("title") {
+        margin-top: var(--spacing-00);
+        margin-bottom: var(--spacing-00);
+        font-size: var(--ht-five);
+        line-height: 29px;
+    }
+
+    @include e("subtitle") {
+        margin-top: var(--spacing-02);
+        margin-bottom: var(--spacing-00);
+        font-size: var(--ht-body);
+        line-height: 20px;
+    }
+
+    @include e("text") {     
+        margin-top: var(--spacing-06);  
+        margin-bottom: var(--spacing-00);
+        font-size: var(--ht-body);
+        line-height: 21px;
+    }
+
+    @include e("amount") {
+        margin-top: var(--spacing-02);
+        margin-bottom: var(--spacing-00);
+        font-size: var(--ht-three);
+        font-weight: 900;
+        line-height: 1;
+        color: $primary-ligther;
+    }
+
+    @include e("btn") {
+        margin-top: var(--spacing-07);
+    }
+}

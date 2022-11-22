@@ -1,0 +1,80 @@
+{{#extend "layouts/page"}}
+
+{{!-- Set the page title --}}
+{{#content "title"}}Contact{{/content}}
+{{#content "css"}}
+
+{{/content}}
+{{!-- Set the page content --}}
+{{#content "content"}}
+
+
+<div class="container content">
+    <div class="row contact">
+        <div class="col-lg-6">
+            <h1 class="contact__title">Contacto</h1>
+            <h3 class="contact__subtitle">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Dummy text of the printing
+                and typesetting industry.
+            </h3>
+            <div class="row contact__main">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <div class="contact__icon">
+                            <i data-eva="email-outline"></i>
+                        </div>
+                        <div class="ms-3">
+                            <div>Email</div>
+                            <a class="contact__info" href="mailto:hola@webok.es">hola@webok.es</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-3 mt-lg-0">
+                    <div class="d-flex align-items-center">
+                        <div class="contact__icon">
+                            <i data-eva="phone-outline"></i>
+                        </div>
+                        <div class="ms-3">
+                            <div>Teléfono</div>
+                            <a class="contact__info" href="tel:+34977130818">977 13 08 18</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-3 mt-lg-4">
+                    <div class="d-flex align-items-center">
+                        <div class="contact__icon">
+                            <i data-eva="map-outline"></i>
+                        </div>
+                        <div class="ms-3">
+                            <div>Dirección</div>
+                            <div class="contact__info">C/Crisantem 543830 TorredembarraTarragona</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__map">
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.360032991245!2d1.3951869154184031!3d41.14849457928679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a3f0571c67f3b9%3A0xbd03cbd109dbd83!2sCarrer%20del%20Crisantem%2C%205%2C%2043830%20Torredembarra%2C%20Tarragona!5e0!3m2!1ses!2ses!4v1653930563098!5m2!1ses!2ses"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mt-3">
+                    <a href="" class="btn btn-secondary">Ver en Google maps</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mt-5 mt-lg-0 contact__side">
+            {{>"molecules/_m-form-contact"}}
+            {{>"molecules/_m-notice-legal"}}
+        </div>
+    </div>
+    {{>"organisms/_o-services"}}
+</div>
+{{/content}}
+{{#content "modal"}}
+{{/content}}
+{{#content "script"}}
+
+{{/content}}
+{{/extend}}

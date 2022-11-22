@@ -1,0 +1,46 @@
+.card-services {
+
+    background: $white;
+    border: 2px solid $primary-ligth;
+    border-radius: $border-radius-sm;
+    padding: var(--spacing-05);
+
+
+    @include e("body") {
+        padding: 0 var(--spacing-07) var(--spacing-08) var(--spacing-07);
+    }
+
+
+    @include e("icon") {
+        svg {
+            fill: $primary-ligth;
+            path {
+                fill: $primary-ligth;
+            }
+        }
+    }
+
+    @include e("title") {
+        margin-top: var(--spacing-04);
+        margin-bottom: var(--spacing-00);
+        font-size: var(--ht-five);
+    }
+
+    @include e("subtitle") {     
+        margin-top: var(--spacing-05);  
+        margin-bottom: var(--spacing-00);
+        font-size: var(--ht-body-l);
+        line-height: 21px;
+    }
+
+    @include e("price") {
+        margin-top: var(--spacing-02);
+        margin-bottom: var(--spacing-00);
+        font-size: var(--ht-four);
+        line-height: 1;
+
+        @media (min-width: 992px) {
+            font-size: var(--ht-three);
+        }
+    }
+}

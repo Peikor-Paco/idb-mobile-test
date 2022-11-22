@@ -1,0 +1,30 @@
+@include b("products") {
+    @include e("header") {
+        margin-bottom: var(--spacing-06);
+
+        @media (min-width: 992px) {
+            margin-bottom: var(--spacing-08);
+        }
+    }
+
+    @include e("title") {
+        margin-top: var(--spacing-00);
+        margin-bottom: var(--spacing-00);
+        color: $primary-ligth;
+        font-size: var(--ht-four);
+
+        @media (min-width: 992px) {
+            font-size: var(--ht-three);
+        }
+    }
+
+    @include e("subtitle") {
+        margin-top: var(--spacing-04);
+        margin-bottom: var(--spacing-00);
+        font-size: var(--ht-body-l);
+
+        @media (min-width: 992px) {
+            font-size: var(--ht-five);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{{#extend "layouts/page"}}
+
+{{!-- Set the page title --}}
+{{#content "title"}}Gallery{{/content}}
+{{#content "css"}}
+
+{{/content}}
+{{!-- Set the page content --}}
+{{#content "content"}}
+<div class="content">
+    {{>"organisms/_o-hero"}}
+    <section class="gallery">
+        <div class="container">
+                <h2 class="gallery__title">Galería</h2>
+                {{>"organisms/_o-gallery"}}
+        </div>
+    </section>
+</div>
+
+{{/content}}
+{{#content "modal"}}
+{{/content}}
+{{#content "script"}}
+<script defer src="vendor/fslightbox.js"></script>
+{{/content}}
+{{/extend}}

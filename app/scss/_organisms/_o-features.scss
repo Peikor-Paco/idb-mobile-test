@@ -1,0 +1,65 @@
+.features {
+    padding-top: var(--spacing-08);
+    padding-bottom: var(--spacing-07);
+
+    @media (min-width: 992px) {
+        padding-bottom: var(--spacing-07);
+    }
+
+    @include e("title") {
+        margin-top: var(--spacing-00);
+        margin-bottom: var(--spacing-00);
+        color: $primary-ligth;
+        font-size: var(--ht-four);
+
+        @media (min-width: 992px) {
+            font-size: var(--ht-three);
+        }
+    }
+
+    @include e("subtitle") {
+        margin-top: var(--spacing-04);
+        margin-bottom: var(--spacing-00);
+        font-size: var(--ht-body-l);
+
+        @media (min-width: 992px) {
+            font-size: var(--ht-five);
+        }
+    }
+
+    @include e("body") {
+        margin-top: var(--spacing-04);
+        margin-bottom: var(--spacing-06);
+        font-size: var(--ht-body);
+
+        @media (min-width: 992px) {
+            font-size: var(--ht-body-l);
+        }
+    }
+
+    &__col+&__col {
+        margin-top: var(--spacing-04);
+
+        @media (min-width: 992px) {
+            margin-top: var(--spacing-0);
+        }
+    }
+
+    @include m("bg") {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        padding-top: var(--spacing-09);
+        padding-bottom: var(--spacing-09);
+        color: $white;
+
+        .features__title {
+            color: $white;
+        }
+        .card-features__title{
+            margin-top: var(--spacing-00);
+        }
+    }
+
+}

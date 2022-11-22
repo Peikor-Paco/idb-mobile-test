@@ -1,0 +1,40 @@
+.card-blog {
+
+    color: $primary;
+
+    & + & {
+        margin-top: var(--spacing-07);
+    }
+
+    @include e("body") {
+        padding: 0 var(--spacing-07) var(--spacing-08) var(--spacing-07);
+    }
+
+    @include e("img") {
+        max-height: 180px;
+    }
+
+    @include e("icon") {
+        padding-top: var(--spacing-06);
+    }
+
+    @include e("title") {
+        margin-top: var(--spacing-05);
+        margin-bottom: var(--spacing-00);
+        font-size: 21px;
+        line-height: 29px;
+        color: $primary-ligth;
+    }
+
+    @include e("text") {     
+        margin-top: var(--spacing-03);  
+        margin-bottom: var(--spacing-00);
+        font-size: var(--ht-body);
+        line-height: 21px;
+    }
+
+    @include e("link") {
+        margin-top: var(--spacing-04);
+        font-size: var( --ht-body-xs);
+    }
+}

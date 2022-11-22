@@ -1,0 +1,37 @@
+.header {
+    font-size: var(--ht-body-s);
+    padding-top: var(--spacing-03);
+
+    @include e("title") {
+        margin: var(--spacing-00);
+        font-size: var(--ht-body-s);
+    }
+
+    @include e("link") {
+        text-decoration: none;
+        font-size: var(--ht-body-s);
+
+        &.active {
+            font-weight: 600;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @include e("icon") {
+        svg {
+            max-width: 15px;
+        }
+        path {
+            fill: $primary;
+        }
+
+        &:hover {
+            path {
+                fill: $primary-ligth;
+            }
+        }
+    }
+}
