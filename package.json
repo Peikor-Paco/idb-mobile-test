@@ -38,7 +38,6 @@
     "postcss-scss": "^2.0.0"
   },
   "dependencies": {
-    "basscss": "^8.1.0",
     "gulp-html-minifier": "^0.1.8",
     "gulp-htmlmin": "^5.0.1",
     "gulp-pxtorem": "^3.0.0",
