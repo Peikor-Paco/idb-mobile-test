@@ -5,10 +5,10 @@
 // The toolkit uses recommendations from Scalable and Modular Architecture for CSS (SMACSS)
 // @link http://smacss.com/book
 //
-// Site:    WebOk3
+// Site:    IDB Mobile Test
 // Author:  Francisco Moren López
 // Email:   morenolopezfr@gmail.com
-// Date:    28/05/22
+// Date:    22/11/22
 // ==========================================================================
 
 ## Technologies
