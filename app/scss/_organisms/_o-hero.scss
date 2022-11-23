@@ -1,4 +1,6 @@
 @include b(hero) {
+    margin-bottom: var(--spacing-xl);
+
     @include e(header) {
         margin-top: var(--spacing-md);
         text-align: center;

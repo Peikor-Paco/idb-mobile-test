@@ -1,19 +1,26 @@
 @include b(banner) {
     position: relative;
-    img {
-        width: 100%;
-        height: auto;
-    }
 
     @include e(bg) {
         width: 100%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    @include e(logo) {
+        width: 250px;
         height: auto;
     }
 
     @include e(content) {
         position: absolute;
-        top: 80px;
-        left: 60px;
+        top: 15%;
+        left: 6%;
     }
 
     @include e(title) {

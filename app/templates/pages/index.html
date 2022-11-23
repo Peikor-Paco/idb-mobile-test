@@ -14,26 +14,34 @@
         {{>"organisms/header"}}
         <div>
             {{>"organisms/hero"}}
-            <div class="heading">
-                <h2 class="heading__title heading__title--play">Play</h2>
-            </div>
-            {{>"organisms/grid-card"}}
-            {{>"organisms/grid-card"}}
-            <div class="heading">
-                <h2 class="heading__title heading__title--learn">Learn</h2>
-            </div>
-            {{>"organisms/grid-card"}}
-            <div class="heading">
-                <h2 class="heading__title heading__title--enjoy">Enjoy</h2>
-            </div>
-            {{>"organisms/grid-card"}}
-            <div class="heading">
-                <h2 class="heading__title heading__title--fitness">Fitness</h2>
-            </div>
-            {{>"organisms/grid-card"}}
+            <section class="block">
+                <header class="block__header">
+                    <a class="block__link block__link--play" href="">{{>"atoms/play"}} <h2 class="block__title">Play {{>"atoms/chevron"}}</h2></a>
+                </header>
+                {{>"organisms/grid-card"}}
+                {{>"organisms/grid-card"}}
+            </section>
+            <section class="block">
+                <header class="block__header">
+                    <a class="block__link block__link--learn" href="">{{>"atoms/learn"}} <h2 class="block__title">Learn {{>"atoms/chevron"}}</h2></a>
+                </header>
+                {{>"organisms/grid-card"}}
+            </section>
+            <section class="block">
+                <header class="block__header">
+                    <a class="block__link block__link--enjoy" href="">{{>"atoms/enjoy"}} <h2 class="block__title">Enjoy {{>"atoms/chevron"}}</h2></a>
+                </header>
+                {{>"organisms/grid-card"}}
+            </section>
+            <section class="block">
+                <header class="block__header">
+                    <a class="block__link block__link--fitness" href="">{{>"atoms/fitness"}} <h2 class="block__title">Fitness {{>"atoms/chevron"}}</h2></a>
+                </header>
+                {{>"organisms/grid-card"}}
+            </section>
         </div>
         {{>"organisms/footer"}}
-    </main>    
+    </main>
 </div>
 
 
