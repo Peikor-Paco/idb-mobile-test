@@ -1,0 +1,28 @@
+@include b(social) {
+    display: flex;
+    margin-top: var(--spacing-md);
+
+    @include e(icons) {
+        margin-left: var(--spacing-sm);
+        margin-right: var(--spacing-sm);
+    }
+
+    @include e(link) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+        background: var(--white);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+
+        &:hover {
+            box-shadow: -1px 1px 1px rgba(0, 0, 0, .1); 
+        }
+
+        svg {
+            fill: var(--dark);
+        }
+    }
+}

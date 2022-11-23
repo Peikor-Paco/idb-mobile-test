@@ -23,9 +23,8 @@
     <div class="layout">
         <aside class="sidebar">
             <header class="sidebar__header">
-                <a href=""><img class="sidebar__logo" src="img/logo.webp" alt=""></a>
 
-                <button type="button" class="sidebar__close js-close-menu" aria-label="Close">
+                <div class="logo"><a href=""><img src="img/logo.webp" loading="lazy"></a></div> <button type="button" class="sidebar__close js-close-menu" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </header>
@@ -91,7 +90,7 @@
             <header class="header">
                 <div class="header__content">
                     <button class="js-menu">open menu</button>
-                    <a href=""><img class="sidebar__logo" src="img/logo.webp" alt=""></a>
+                    <div class="logo"><a href=""><img src="img/logo.webp" loading="lazy"></a></div>
                 </div>
 
 
@@ -128,8 +127,8 @@
                         </h2>
                     </header>
                 </section>
-                <div class="section">
-                    <h2 class="section__title section__title--blue">Play</h2>
+                <div class="heading">
+                    <h2 class="heading__title heading__title--play">Play</h2>
                 </div>
                 <section class="grid-card">
                     <header class="grid-card__header">
@@ -145,113 +144,119 @@
                     <div class="grid-card__content">
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                     </div>
@@ -270,119 +275,125 @@
                     <div class="grid-card__content">
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                     </div>
                 </section>
-                <div class="section">
-                    <h2 class="section__title section__title--yellow">Learn</h2>
+                <div class="heading">
+                    <h2 class="heading__title heading__title--learn">Learn</h2>
                 </div>
                 <section class="grid-card">
                     <header class="grid-card__header">
@@ -398,119 +409,125 @@
                     <div class="grid-card__content">
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                     </div>
                 </section>
-                <div class="section">
-                    <h2 class="section__title section__title--yellow">Enjoy</h2>
+                <div class="heading">
+                    <h2 class="heading__title heading__title--enjoy">Enjoy</h2>
                 </div>
                 <section class="grid-card">
                     <header class="grid-card__header">
@@ -526,119 +543,125 @@
                     <div class="grid-card__content">
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                     </div>
                 </section>
-                <div class="section">
-                    <h2 class="section__title section__title--yellow">Fitness</h2>
+                <div class="heading">
+                    <h2 class="heading__title heading__title--fitness">Fitness</h2>
                 </div>
                 <section class="grid-card">
                     <header class="grid-card__header">
@@ -654,147 +677,161 @@
                     <div class="grid-card__content">
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                         <div class="grid-card__item">
                             <article class="card">
-                                <div class="card__media">
-                                    <img src="img/game03.webp" alt="Card image" loading="lazy" />
-                                </div>
-
-                                <div class="card__content">
-                                    <div>
-                                        <div class="card__thumbnails">
-                                            <img src="img/game03.webp" alt="Card image" />
-                                        </div>
+                                <a class="card__link" href="">
+                                    <div class="card__media">
+                                        <img src="img/game03.webp" alt="Card image" loading="lazy" />
                                     </div>
-                                    <div class="card__body">
-                                        <h3 class="card__title">Card title</h3>
-                                        <div class="card__actions">
-                                            <div class="card__rating">
-                                                <div class="rating">
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item">★</span>
-                                                    <span class="rating__item rating__item--inactive">★</span>
+
+                                    <div class="card__content">
+                                        <div>
+                                            <div class="card__thumbnails">
+                                                <img src="img/game03.webp" alt="Card image" />
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <h3 class="card__title">Card title</h3>
+                                            <div class="card__actions">
+                                                <div class="card__rating">
+                                                    <div class="rating">
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item">★</span>
+                                                        <span class="rating__item rating__item--inactive">★</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card__button">
+                                                    Get
                                                 </div>
                                             </div>
-                                            <a href="" class="card__button">
-                                                Get
-                                            </a>
+                                            <p class="card__paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
+                                                quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
+                                                doloribus.
+                                            </p>
                                         </div>
-                                        <p class="card__paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis error voluptatibus modi harum atque rem ipsam
-                                            quas debitis nesciunt quibusdam facere ut, adipisci voluptatum accusantium fugiat. Laudantium magni porro
-                                            doloribus.
-                                        </p>
                                     </div>
-                                </div>
+                                </a>
                             </article>
                         </div>
                     </div>
                 </section>
             </div>
-            <footer>
-                <div class="footer-wrap">
-                    <div class="logo"><a href="/"><img src="/assets/images/logo.png"></a></div>
-                    <!--<p>© Moira.club, todos los derechos reservados.</p>-->
-
-                    <div class="terms">
-
-                        <div><a href="/es/terms">Términos</a></div>
-                        <div>|</div>
-                        <div><a href="/es/privacy">Privacidad</a></div>
-                        <div>|</div>
-                        <!--    <div><a href="/es/contact">Contacto</a></div>-->
-                        <div><a href="/es/contact">Soporte</a></div>
-                        <!--  <div><a href="/es/terms">Términos</a></div>
-                  <div><a href="/es/privacy">Privacidad</a></div>
-                  <div><a href="/es/contact">Contacto</a></div>-->
-
-                    </div>
+            <footer class="footer">
+                <div class="footer__content">
+                    <div class="logo"><a href=""><img src="img/logo.webp" loading="lazy"></a></div>
+                    <ul class="footer__legal">
+                        <li class="footer__item"><a class="footer__link" href="/">Terms</a></li>
+                        <li class="footer__item">|</li>
+                        <li class="footer__item"><a class="footer__link" href="/">Privacy</a></li>
+                        <li class="footer__item">|</li>
+                        <li class="footer__item"><a class="footer__link" href="/">Support</a></li>
+                    </ul>
                     <div class="social">
-                        <div class="icons"><a href="https://www.facebook.com/moira.club" class=""><img class="facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAA/ElEQVRoge2WPQrCQBBGnz8Itla2lt7AzsZOQW9g4308nYpgo2IhWAhqFSQWWghqsrtxd1acByEQsjvfYydDQFH+m1KAGmVgCAyADtAEGsAROAOXx30GjAPksaILLIHU4FoJZfzIBEgwCx+dQA+78FEJVIA5duGdBcrF874wAtoe9n1L1cOefYN31sACOD0923vI4kRe+0wJM76dOZAt0JKLZsaVbIHaN4v5OMo0ZE0fUygoKiBNkX7M63VbEqDOfQgYE9MJ7LAMD3EJbF0WxSSwcVkUk8DPn4AKSOP0Dei/kDQqII0KSKMC0qiANCogjQpIowLSqICiKLLcAIjAYQHOucCfAAAAAElFTkSuQmCC"></a></div>
-                        <div class="icons"><a href="https://www.instagram.com/moira.club/" class=""><img class="instagram" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAACIklEQVRoge2YuU7DUBBFj5CShvAlFCwFgT8AIbEJ0cD/sFVsX0DIz0DNTsPaEwrSBIr3kKKJicczNgmSr/Sk2PG7d8aJ7h0bSpQoUeI/oQpsAE3gGvgAvpzrI3I1I3e1qOLXgIccCk5b98BqnoWPAHt/ULhcu1Hbjf0BFP+zdrzFryWQfgIHQB0Y9QpEjjpwBLQT9FasxFV6//PPwISv3r6YjBrdmndAxUK2Qe+dL6L4RULRT8ACMEXvL7FuIW4KkoMcik3CU5fGYzx3LLQbFuIbQTKj2JOUE2k+n9TArNC+tjTwLkhqKddrc0L6/EJs4hGYj+fGxJ53SwNS+DdYcyLN57X6bgJPTvTz+T9pQJMTVp8vvAFLTmTx+cIbsOaE1ucLb8CTExqfL7wBS078QOPzhTfQEt+n5UQ3amJvy6AP5DRvGyB1O3kRZcGrOB7PsFde+2YtwtPAhTjezLB3SxyfO+r4FRYbnVTwTjMkNlolDGYyyPo1MQ28iD23DCjIIEyV8ro2YWyYI7hNLX4+offOd4Alh767AfC9sdjOQd9NMEIYjbMU3iFMooWO01kfaFYIg1la8bfAcgpXLg80clSoK/ZUCI7SAK4ICdsCLoHT+J3mDcOc0DY9Up4JkkMLiREnQvvUQmL1eS+0OZEKi897kSUnVND4vBfWnFBjEG+mNTmhhsXnvUuTE5mh9Xnv0uSEGUk+7y3YkhMlSpQoMST4Bnazbl8qs0Q8AAAAAElFTkSuQmCC"></a></div>
-                        <div class="icons"><a href="https://www.linkedin.com/company/moira-club" class=""><img class="linkedin" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAAB20lEQVRoge2YsUrDUBSGP4tg9QksBUfFxc3Fwa042NLB13ARNydBCr6Bi5uzDyCiFVwcHBzUQRBE6NiCttgKYh3SQMHe5tzkpknD+eBAIfee/F+Te5sUFEVRlGxQBepAZ1B1oJJoohg5BvqGqiWYKxaqmGX9KieWLgZuCBa+TixdDLQJFv5MLJ0lOUd9+o76xI5E+N7RmKmhQvAtvZ1YupioYZY9SjBXrJSBK7xNrD34nLkrqyhTxkzSAcZQwNs31oEikAd+gRbwCtzhvcC0XZ846CfJryjzN4bGrwLnwI9gXgc4wftynDFJ4V2gZ3FOv5pAyYGrOLAL4YMQosPVBTanRfgQb31GEe4DDWBhGoQl61Vae+NkJLv0OBlJL+l8VzSAJbw75h+uXg/TRBFYMx2cnWAQKd/ABfCM98dCAdgCli16lICHsAEmsYb9ugQWR/TIAfvIN7azkK5WgaPOfwTmA7KcCnvd2imGCxx1/o4gy4qw15uFX+jAUeZ3gTlhnndBv6Zpclp26Se8zUrCi2CMcWmkRdh4RUbwIRiTNx1Ii3DLYmxPMMb4QJUW4S+LsRJhI2kRtnn8jPSomhbhiaHCWUeFs44KZx0VzjoqnHVUWFEURVEURVHC8QeJqYKP/y2ajgAAAABJRU5ErkJggg=="></a></div>
-                        <div class="icons"><a href="https://www.youtube.com/channel/UCWhgaNtGyAnW1gC7cLKu-Ug/featured" class=""><img class="youtube" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAACP0lEQVRoge3ZzW8NURjH8Y9yExKhJUWQqKRNy0bY+AcqYuOPsJHY2EosbKwl/hgWXtI/QEgjCCmCtA0qbQnqrWVx7iTT09GZ25n7QuabPMnMycx5nt+ZM895o6ampqampsamgs81MIwRHMA+7Mdu7EA/djavG813tmJbqo7P+Nm8XsKnlM3jPd5hGrN4ijcb0LSGIVzFQ/zA7y7YR0zgfLNhWuac0ILdCP5v9ghHWxFxFss9EHiWvcJgVtCbM+5vCX2+F+kXGvlu3oPHdL/V8+xlVuB90f1wntIe4LCQIVcRCznUmVhKMxoX/KtCjsQFsZChkg5OCWmy3YzFBbGQzNTWAndwXBjA5krWtR65PWdSuYySZheuC9OSqjPX7TwhUxUKSRjFjYqFTOYJmWmDkIRx4f+pQshMnpDFNgohzIwvYqGkn+9yZu5lZ7lFSf6fXyV8rRoU46zVKYqugzZcR9lPnkfStcp24WU5H2G6jULG8bhk/YnN5/jyrA1CxlSffjNnwGkeVCiknQPi/TjwLdH9lzylBWjgAq5goIL6sliMC2Ihb0s6OINrMiZ1FTMbF8RCnpd0cLPk+0V5ERfEKayskE6x5mf/b4U8wUpnYtkwK8IwsYpYyJyws9fLTCi4aDuBr6rP/VXYN5xsRfVpYUO524Gn7YOwC9oyg7iEe8LueTeCX2r6v4w96wVbdDrdJyz4R4TjhIPY27QB4TghseQooYHtqTrWO1ZYEHpA+lhhCq/1fvKpqampqanpHf4AGXx2NSiaKfwAAAAASUVORK5CYII="></a></div>
+                        <div class="social__icons">
+                            <a href="/" class="social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z" />
+                                </svg> </a>
+                        </div>
+                        <div class="social__icons">
+                            <a href="/" class="social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="24px" height="24px">
+                                    <path d="M 7.546875 0 C 3.390625 0 0 3.390625 0 7.546875 L 0 18.453125 C 0 22.609375 3.390625 26 7.546875 26 L 18.453125 26 C 22.609375 26 26 22.609375 26 18.453125 L 26 7.546875 C 26 3.390625 22.609375 0 18.453125 0 Z M 7.546875 2 L 18.453125 2 C 21.527344 2 24 4.46875 24 7.546875 L 24 18.453125 C 24 21.527344 21.53125 24 18.453125 24 L 7.546875 24 C 4.472656 24 2 21.53125 2 18.453125 L 2 7.546875 C 2 4.472656 4.46875 2 7.546875 2 Z M 20.5 4 C 19.671875 4 19 4.671875 19 5.5 C 19 6.328125 19.671875 7 20.5 7 C 21.328125 7 22 6.328125 22 5.5 C 22 4.671875 21.328125 4 20.5 4 Z M 13 6 C 9.144531 6 6 9.144531 6 13 C 6 16.855469 9.144531 20 13 20 C 16.855469 20 20 16.855469 20 13 C 20 9.144531 16.855469 6 13 6 Z M 13 8 C 15.773438 8 18 10.226563 18 13 C 18 15.773438 15.773438 18 13 18 C 10.226563 18 8 15.773438 8 13 C 8 10.226563 10.226563 8 13 8 Z" />
+                                </svg> </a>
+                        </div>
+                        <div class="social__icons">
+                            <a href="/" class="social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="24px" height="24px">
+                                    <path d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z" />
+                                </svg> </a>
+                        </div>
+                        <div class="social__icons">
+                            <a href="/" class="social__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <path d="M21.582,6.186c-0.23-0.86-0.908-1.538-1.768-1.768C18.254,4,12,4,12,4S5.746,4,4.186,4.418 c-0.86,0.23-1.538,0.908-1.768,1.768C2,7.746,2,12,2,12s0,4.254,0.418,5.814c0.23,0.86,0.908,1.538,1.768,1.768 C5.746,20,12,20,12,20s6.254,0,7.814-0.418c0.861-0.23,1.538-0.908,1.768-1.768C22,16.254,22,12,22,12S22,7.746,21.582,6.186z M10,15.464V8.536L16,12L10,15.464z" />
+                                </svg> </a>
+                        </div>
                     </div>
-                    <p>All rights reserved, © Moira.club <script type="text/javascript">
-                            var year = new Date();
-                            document.write(year.getFullYear());
-                        </script>2022
-                    </p>
+                    <p class="footer__copyright">All rights reserved, © Moira.club 2022</p>
                 </div>
             </footer>
         </main>

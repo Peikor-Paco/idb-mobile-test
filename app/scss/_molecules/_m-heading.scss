@@ -1,0 +1,16 @@
+@include b(heading) {
+    @include e(title) {
+        @include m(play) {
+            color: var(--blue);
+        }
+        @include m(learn) {
+            color: var(--yellow);
+        }
+        @include m(enjoy) {
+            color: var(--purple);
+        }
+        @include m(fitness) {
+            color: var(--green);
+        }
+    }
+}
