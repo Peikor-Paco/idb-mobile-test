@@ -1,0 +1,14 @@
+@include b(layout) {
+    display: flex;
+    @include e(content) {
+        width: 100%;
+        max-width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+       
+
+        @media(min-width: 1200px) {
+            padding-left: var(--sidebar-width);
+        }
+    }
+}

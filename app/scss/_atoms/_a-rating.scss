@@ -1,0 +1,12 @@
+@include b(rating) {
+    display: flex;
+    align-self: start;
+
+    @include e(item) {
+        color: var(--yellow);
+
+        @include m(inactive) {
+            color: lighten(#f4d156, 6);
+        }
+    }
+}

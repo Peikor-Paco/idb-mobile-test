@@ -1,0 +1,16 @@
+@include b(hero) {
+    @include e(header) {
+        margin-top: var(--spacing-md);
+        text-align: center;
+    }
+
+    @include e(title) {
+        font-size: 24px;
+    }
+
+    @include e(subtitle) {
+        margin-top: var(--spacing-sm);
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

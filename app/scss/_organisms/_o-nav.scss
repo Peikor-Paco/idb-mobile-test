@@ -1,0 +1,17 @@
+@include b(nav) {
+    @include e(item) {
+        padding: var(--spacing-md) var(--spacing-xl);
+
+        &:nth-child(2n) {
+            background-color: #F8F8F8;
+        }
+    }
+
+
+    @include e(link) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,50 @@
+@include b(sidebar) {     
+    position: fixed;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: var(--light);
+    border-right: 1px solid var(--border-color);
+
+
+    @media (max-width: 1191.98px) {      
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 9999;
+        overflow: auto;
+        display: block;
+        transition: transform .5s ease-out;
+        transform: translate(-100%,0);
+        margin-bottom: 0;
+
+        &.open {
+            transition: transform .5s ease-out;
+            transform: translate(0, 0)
+        }
+    }
+
+    @include e(header) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: var(--spacing-md) var(--spacing-xl);
+    }
+
+    @include e(logo) {
+        width: 150px;
+        height: auto;
+    }
+
+    @include e(close) {
+        user-select: none;
+        -webkit-appearance: none;
+        background-color: transparent;
+        padding: var(--spacing);
+        border: 0;
+        font-size: 20px;
+
+        @media (min-width: 768px) {      
+            display: none;
+        }
+    }
+}

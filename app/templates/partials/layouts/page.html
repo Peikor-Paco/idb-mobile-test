@@ -16,24 +16,24 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">    
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    {{>"organisms/_o-header"}}
     {{#block "content"}}
     
 
-
     {{/block}}
-    {{>"organisms/_o-footer"}}
-    {{>"organisms/_o-cookies"}}
     <button onclick="topFunction()" id="goToTop" title="Go to top"
         class="btn position-fixed end-0 bottom-0"> <i data-eva="arrow-upward" data-eva-height="24" data-eva-width="24"></i>
     </button>
     <!-- jQuery -->
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+  integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+  crossorigin="anonymous"></script>
     <script>
 
         goToTopButton = document.getElementById("goToTop");
@@ -54,7 +54,12 @@
             document.documentElement.scrollTop = 0;
         }
 
-        eva.replace()
+        $('.js-menu').on('click', function(e) {
+            e.preventDefault(); $('.sidebar').addClass('open');
+        });
+        $('.js-close-menu').on('click', function(e) {
+            e.preventDefault(); $('.sidebar').removeClass('open');
+        });
     </script>
 
     {{#block "script"}}

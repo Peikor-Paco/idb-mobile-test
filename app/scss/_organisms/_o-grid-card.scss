@@ -1,0 +1,84 @@
+@include b(grid-card) {
+
+    @include e(content) {
+        margin-top: var(--spacing-md);
+        position: relative;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        padding-bottom: var(--spacing);
+
+        &::-webkit-scrollbar {
+            height: var(--spacing-sm);
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: var(--white);
+            border-radius: var(--border);
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: var(--border);
+        }
+
+        @media(min-width: 576px) {
+            margin-left: -6px;
+            margin-right: -6px;
+            justify-content: space-between;
+        }
+    }
+
+    &+& {
+        margin-top: 48px;
+    }
+
+    @include e(item) {
+        padding-left: var(--spacing-sm);
+        padding-right: var(--spacing-sm);
+        scroll-snap-align: start;
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+
+    @include e(header) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @include e(title) {
+        font-size: 18px;
+    }
+
+    @include e(more) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: var(--spacing);
+        text-decoration: none;
+        font-size: 14px;
+        color: var(--dark);
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+
+
+
+
+

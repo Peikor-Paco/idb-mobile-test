@@ -7,6 +7,35 @@
 {{/content}}
 {{!-- Set the page content --}}
 {{#content "content"}}
+<div class="layout">
+    {{>"organisms/sidebar"}}
+
+    <main class="layout__content">
+        {{>"organisms/header"}}
+        <div>
+            {{>"organisms/hero"}}
+            <div class="section">
+                <h2 class="section__title section__title--blue">Play</h2>
+            </div>
+            {{>"organisms/grid-card"}}
+            {{>"organisms/grid-card"}}
+            <div class="section">
+                <h2 class="section__title section__title--yellow">Learn</h2>
+            </div>
+            {{>"organisms/grid-card"}}
+            <div class="section">
+                <h2 class="section__title section__title--yellow">Enjoy</h2>
+            </div>
+            {{>"organisms/grid-card"}}
+            <div class="section">
+                <h2 class="section__title section__title--yellow">Fitness</h2>
+            </div>
+            {{>"organisms/grid-card"}}
+        </div>
+        {{>"organisms/footer"}}
+    </main>    
+</div>
+
 
 {{/content}}
 {{#content "modal"}}
