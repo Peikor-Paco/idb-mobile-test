@@ -3,24 +3,33 @@
 
     @include e(bg) {
         width: 100%;
-        height: auto;
+        height: 300px;
+        object-fit: cover;
 
-        img {
-            width: 100%;
-            height: auto;
+
+        @media(min-width: 576px) {
+            height: 413px;
         }
-
+        
     }
 
     @include e(logo) {
-        width: 250px;
+        width: 190px;
         height: auto;
+        @media(min-width: 576px) {
+            width: 250px;
+        }
     }
 
     @include e(content) {
         position: absolute;
-        top: 15%;
-        left: 6%;
+        top: 3%;
+        left: 3%;
+
+        @media(min-width: 576px) {
+            top: 15%;
+            left: 6%;
+        }
     }
 
     @include e(title) {
@@ -36,12 +45,13 @@
         margin-top: var(--spacing-md);
         padding: var(--spacing-md) var(--spacing-xl);
         background-color: #d84848;
-        background-image: linear-gradient(-45deg, #d84848, #b62525);
-        box-shadow: 0 3px 0 0 #b62525, 0 4px 4px -1px rgba(0, 0, 0, .6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, .1) inset;
+        background-image: linear-gradient(-180deg, #d84848, #b62525);
+        box-shadow: 0 6px 0 0 #750d0d;
         border-radius: var(--border-sm);
         color: var(--white);
+        font-size: 20px;
         font-weight: 600;
-        text-shadow: 0 1px 0 rgba(19, 16, 16, 0.616);
+        text-shadow: 2px 1px 4px rgba(19, 16, 16, 0.616);
         text-decoration: none;
 
         &:active {

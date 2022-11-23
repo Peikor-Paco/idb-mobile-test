@@ -110,7 +110,7 @@
                         <div class="banner__content">
                             <img class="banner__logo" src="img/playspiderman_logo.webp" alt="spiderman movie" loading="eager" />
                             <h2 class="banner__title">
-                                The Oficial Movies Mobile Games
+                                The Oficial Movies Mobile Game - Be the hero
                             </h2>
                             <a href="" class="banner__button">PLAY NOW
 
@@ -870,32 +870,11 @@
     </div>
 
 
-    <button onclick="topFunction()" id="goToTop" title="Go to top" class="btn position-fixed end-0 bottom-0"> <i data-eva="arrow-upward" data-eva-height="24" data-eva-width="24"></i>
-    </button>
-    <!-- jQuery -->
 
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous">
+    </script>
     <script>
-        goToTopButton = document.getElementById("goToTop");
-
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                goToTopButton.style.display = "block";
-            } else {
-                goToTopButton.style.display = "none";
-            }
-        }
-
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
         $('.js-menu').on('click', function(e) {
             e.preventDefault();
             $('.sidebar').addClass('open');

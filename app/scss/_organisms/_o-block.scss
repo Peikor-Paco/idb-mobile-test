@@ -1,11 +1,16 @@
 @include b(block) {
 
+    
     &+& {
         margin-top: var(--spacing-xxl);
     }
 
     @include e(header) {
         margin-bottom: var(--spacing-lg);
+        @media(max-width: 575.99px) {
+            padding-left: var(--spacing);
+            padding-right: var(--spacing);     
+        }
     }
 
     @include e(title) {
