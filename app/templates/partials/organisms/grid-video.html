@@ -1,0 +1,30 @@
+<section class="grid-card">
+    <header class="grid-card__header">
+        <h2 class="grid-card__title">
+            {{grid-card-title}}
+        </h2>
+        <a href="" class="grid-card__more">
+            See more {{>"atoms/chevron"}}
+        </a>
+    </header>
+    <div class="grid-card__content">
+        <div class="grid-card__item">
+            {{>"molecules/video" 
+                video-title="Turtles are one of the last oldest grups of reptiles"
+                video-image="video01"
+            }}
+        </div>
+        <div class="grid-card__item">
+            {{>"molecules/video" 
+                video-title="Giraffes are the tallestv mammals"
+                video-image="video02"
+            }}
+        </div>
+        <div class="grid-card__item">
+            {{>"molecules/video" 
+                video-title="Get  to know the amazing mammals"
+                video-image="vidoe03"
+            }}
+        </div>
+    </div>
+</section>

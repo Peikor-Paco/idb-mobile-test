@@ -1,0 +1,46 @@
+@include b(video) {
+    width: 180px;
+
+    @media(min-width: 576px) {
+        width: 100%;
+    }
+
+    @include e(link) {
+        text-decoration: none;
+        color: var(--dark);
+    }
+
+    @include e(media) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        object-fit: cover;
+        height: 210px;
+        border-radius: var(--border-sm);
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: 1s;
+
+            &:hover {
+                transform: var(--scale);
+            }
+        }
+    }
+
+    @include e(content) {
+        display: flex;
+        align-items: center;
+        padding: var(--spacing) 0;
+    }
+
+
+    @include e(title) {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+}

@@ -1,0 +1,43 @@
+@include b(icon){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border-xs);
+    background: transparent;
+    path {
+        fill: var(--icon-color);
+    }
+
+    @include m(play) {
+        background: var(--blue);
+        path {
+            fill: var(--white);
+        }
+    }
+
+    @include m(learn) {
+        background: var(--yellow);
+        path {
+            fill: var(--white);
+        }
+    }
+    @include m(enjoy) {
+        background: var(--purple);
+        path {
+            fill: var(--white);
+        }
+    }
+    @include m(fitness) {
+        background: var(--green);
+        path {
+            fill: var(--white);
+        }
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+}

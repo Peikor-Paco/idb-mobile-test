@@ -1,0 +1,25 @@
+p {
+  margin: 0;
+}
+
+.text {
+  &-uppercasse {
+    text-transform: uppercase;
+  }
+
+  &-bold {
+   font-weight: 600 !important;
+  }
+
+  &-semibold {
+   font-weight: 500;
+  }
+
+  &-right {
+   text-align: right;
+  }
+
+  &-center {
+   text-align: center;
+  }
+}
